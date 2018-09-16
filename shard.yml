@@ -1,0 +1,17 @@
+name: iresize
+version: 0.1.0
+
+authors:
+  - Daniel Cefram Ramirez <dcefram@gmail.com>
+
+targets:
+  iresize:
+    main: src/iresize.cr
+
+crystal: 0.26.1
+
+license: MIT
+
+dependencies:
+  magickwand-crystal:
+    github: blocknotes/magickwand-crystal
