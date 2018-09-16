@@ -22,7 +22,7 @@ I use Linux at home, so that's the only platform that I would generate binaries 
 ## Usage
 
 ```bash
-iresize -i ./ -o ./output -h 720 
+iresize -I ./ -O ./output -H 720 
 iresize --input ./ --output ./output --height 720 --width 720
 iresize --input ./ --output ./output --height 720 --watch
 ```
@@ -31,10 +31,10 @@ iresize --input ./ --output ./output --height 720 --watch
 
 |Flag|Short|Description|Default Value|
 |-----------|-----------|-----------|-----------|
-|`--input`|`-i`|Path to the folder filled with images, or Path to the target image (JPEG and PNG files are only supported as of now)|`./`|
-|`--output`|`-o`|Path to the output folder|`./output`|
-|`--height`|`-h`|Define the height we should resize the image(s) to.|720|
-|`--width`|`-w`|Define the width we should resize the image(s) to.|Keep aspect ratio|
+|`--input`|`-I`|Path to the folder filled with images, or Path to the target image (JPEG and PNG files are only supported as of now)|`./`|
+|`--output`|`-O`|Path to the output folder|`./output`|
+|`--height`|`-H`|Define the height we should resize the image(s) to.|720|
+|`--width`|`-W`|Define the width we should resize the image(s) to.|Keep aspect ratio|
 |`--watch`|<none>|Watch directory and auto convert files if new files are added|Keep aspect ratio|
 
 `--watch` flag is not yet supported. I'll get into this next po :D
