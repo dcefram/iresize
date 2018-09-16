@@ -5,4 +5,4 @@
 /spec/output/
 .vscode
 *.dwarf
-iresize
+/iresize
