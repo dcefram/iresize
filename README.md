@@ -16,7 +16,7 @@ Since I use [magickwand-crystal](https://github.com/blocknotes/magickwand-crysta
 I use Linux at home, so that's the only platform that I would generate binaries for.
 
 - Install the requirements first
-- Download the binary from the (releases page)[https://github.com/dcefram/iresize/releases]
+- Download the binary from the [releases page](https://github.com/dcefram/iresize/releases)
 - Add the binary to your path :)
 
 ## Usage
