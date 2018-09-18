@@ -6,7 +6,7 @@ I was trying to find the correct tagalog word for "resize", but Google tells me 
 
 ## Requirements
 
-Since I use [magickwand-crystal](https://github.com/blocknotes/magickwand-crystal), this tool inherits all the requirement of that shard.
+Since I use [magickwand-crystal](https://github.com/blocknotes/magickwand-crystal), this tool inherits all the requirements of that shard.
 
 - _libMagickWand_ must be installed
 - _pkg-config_ must be available
