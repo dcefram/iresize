@@ -28,7 +28,7 @@ module IResize
       if input_type == File::Type::Directory || input_type == File::Type::Symlink
         images = self.list_files
 
-        iter = images.each { |img|
+        iter = images.each do |img|
           if LibMagick.magickReadImage @wand, File.join(input_path, img)
             if @options[:width].nil? || @options[:height].nil?
               orig_height = LibMagick.magickGetImageHeight(@wand).to_f32
@@ -49,7 +49,7 @@ module IResize
             LibMagick.magickWriteImage @wand, File.join(output_path, img)
             puts File.join(output_path, img)
           end
-        }
+        end
       elsif input_type === File::Type::File && self.is_valid_ext input_path
         if LibMagick.magickReadImage @wand, input_path
           if @options[:width].nil? || @options[:height].nil?
@@ -67,9 +67,11 @@ module IResize
             }
           end
 
+          image_name = File.basename input_path
+
           LibMagick.magickScaleImage @wand, dimensions[:width], dimensions[:height]
-          LibMagick.magickWriteImage @wand, File.join(output_path, input_path)
-          puts File.join(output_path, input_path)
+          LibMagick.magickWriteImage @wand, File.join(output_path, image_name)
+          puts File.join(output_path, image_name)
         end
       else
         puts "Invalid path supplied to `-i` or `--input`: #{@options[:input_path].as(String)} of type #{input_type}"

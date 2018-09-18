@@ -37,8 +37,6 @@ iresize --input ./ --output ./output --height 720 --watch
 |`--width`|`-W`|Define the width we should resize the image(s) to.|Keep aspect ratio|
 |`--watch`|<none>|Watch directory and auto convert files if new files are added|Keep aspect ratio|
 
-`--watch` flag is not yet supported. I'll get into this next po :D
-
 ## Contributing
 
 1. Fork it (<https://github.com/dcefram/img-resize/fork>)
