@@ -35,7 +35,7 @@ iresize --input ./ --output ./output --height 720 --watch
 |`--output`|`-O`|Path to the output folder|`./output`|
 |`--height`|`-H`|Define the height we should resize the image(s) to.|720|
 |`--width`|`-W`|Define the width we should resize the image(s) to.|Keep aspect ratio|
-|`--watch`|<none>|Watch directory and auto convert files if new files are added|Keep aspect ratio|
+|`--watch`|<none>|Watch directory and auto convert files if new files are added|false|
 
 ## Contributing
 
