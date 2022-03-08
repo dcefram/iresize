@@ -1,5 +1,7 @@
 # iresize
 
+**i-resize:** _conyo_ tagalog for the word resize. Actual tagalog word is "baguhin ang laki", but that word is too long for a cli command.
+
 Use CLI to resize images. This is just a personal tool that I use for my blogs (converting super large images to smaller sizes that I can safely upload onto my blog)
 
 I was trying to find the correct tagalog word for "resize", but Google tells me its simply 'i-resize'... I thought of naming most of my projects in tagalog just to be sorta unique :D. Thus, the name of this project is `iresize`
